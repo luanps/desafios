@@ -1,3 +1,21 @@
+#DESCRIÇÃO DA SOLUÇÃO PROPOSTA:
+1. Manipulação de Strings:
+desenvolvido em Python 3, a função breaklines.py lê da entrada padrão
+o texto a ser formatado, a quantidade de caracteres maxima permitida 
+por linha e opcionalmente a indentacao do texto.
+desta forma a chamada para função se dá conforme exemplo a seguir:
+
+'''
+python3 breakLines.py input.txt 40
+'''
+e para texto indentado:
+
+'''
+python3 breakLines.py input.txt 40 -i 1
+'''
+
+
+
 # Desafios IDwall
 
 Aqui estão os desafios para a primeira fase de testes de candidatos da IDwall.
