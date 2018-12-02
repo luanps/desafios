@@ -5,14 +5,26 @@ o texto a ser formatado, a quantidade de caracteres maxima permitida
 por linha e opcionalmente a indentacao do texto.
 desta forma a chamada para função se dá conforme exemplo a seguir:
 
-'''
+```
 python3 breakLines.py input.txt 40
-'''
+```
 e para texto indentado:
 
-'''
+```
 python3 breakLines.py input.txt 40 -i 1
-'''
+```
+
+2. Crawling data:
+desenvolvido em Python 3, a função crawlReddit.py lê da entrada padrão
+subreddits separados por ";" e busca threads no portal 
+[reddit](http://reddit.com) que possuam menos de 24 horas de postagem e
+ mais de 5000 upvotes.
+
+Exemplo de execução:
+
+``
+python3 crawlReddit.py 'cats;dogs;brazil'
+```
 
 
 

@@ -1,6 +1,6 @@
 import urllib.request, json
-import pdb
 import argparse
+#from scrapyReddit import runScrapy
 
 #quantidade minima de upvotes a ser considerada
 threshold = 5000
@@ -35,10 +35,14 @@ def topThreads(subreddit):
 
 parser = argparse.ArgumentParser()
 parser.add_argument("sub",help='Subreddits separados por ;')
+#parser.add_argument("-s",help='Scraper com a lib Scrapy: -s 1')
 args = parser.parse_args()
 
 subreddits = args.sub.split(';')
-res = []
 for sub in subreddits:
     print(sub)
+    '''if args.s:
+        res = runScrapy(sub)
+        pdb.set_trace()
+    else:'''
     print(topThreads(sub))
