@@ -22,7 +22,7 @@ subreddits separados por ";" e busca threads no portal
 
 Exemplo de execução:
 
-``
+```
 python3 crawlReddit.py 'cats;dogs;brazil'
 ```
 
