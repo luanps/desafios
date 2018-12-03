@@ -26,6 +26,14 @@ Exemplo de execução:
 python3 crawlReddit.py 'cats;dogs;brazil'
 ```
 
+Adicionalmente pode-se enviar a lista acima para o 
+[Telegram](https://web.telegram.org/) mediante a seguinte chamada:
+
+```
+python3 crawlReddit.py 'cats;dogs;brazil' -id $123
+```
+
+substituindo o parâmetro $123 pelo respectivo chat_id do usuário Telegram.
 
 
 # Desafios IDwall

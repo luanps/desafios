@@ -43,13 +43,11 @@ parser.add_argument("-id",help='Chat_id Telegram: Ex: -id 123')
 args = parser.parse_args()
 
 subreddits = args.sub.split(';')
-if args.id:
-    pdb.set_trace()
 
 for sub in subreddits:
-    print(sub)
-    '''if args.s:
-        res = runScrapy(sub)
-        pdb.set_trace()
-    else:'''
-    print(topThreads(sub))
+    if args.id:
+        bot.sendMessage(int(args.id),str(sub))
+        bot.sendMessage(int(args.id),str(topThreads(sub)))
+    else:
+        print(sub)
+        print(topThreads(sub))
