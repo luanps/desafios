@@ -1,9 +1,13 @@
 import urllib.request, json
 import argparse
-#from scrapyReddit import runScrapy
+import telepot
+import pdb
 
 #quantidade minima de upvotes a ser considerada
 threshold = 5000
+
+#config bot Telegram
+bot = telepot.Bot('792123714:AAFuyWepk0DZqCE4H1HuNpf1R5GTFth5Qms')
 
 #recebe subreddit e extrai informacoes do JSON reddit
 def topThreads(subreddit):
@@ -35,10 +39,13 @@ def topThreads(subreddit):
 
 parser = argparse.ArgumentParser()
 parser.add_argument("sub",help='Subreddits separados por ;')
-#parser.add_argument("-s",help='Scraper com a lib Scrapy: -s 1')
+parser.add_argument("-id",help='Chat_id Telegram: Ex: -id 123')
 args = parser.parse_args()
 
 subreddits = args.sub.split(';')
+if args.id:
+    pdb.set_trace()
+
 for sub in subreddits:
     print(sub)
     '''if args.s:
